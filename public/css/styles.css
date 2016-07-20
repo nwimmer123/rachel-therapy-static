@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* { /* zero all of these so I'm not dealing w hidden add-ons */
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-image:url(../images/lgren037.gif);
+/*  background-color: #297A52;*/
+  margin: 10px; /* space container down fr top of page */
+}
+h2, h3, h4, p { /* zero these margins so I can control them individually */
+  margin: 0px;
+}
+h3, h4 { /* this is just used for the name of the Collaborative */
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin-bottom: 8px;
+}
+
+a { /* style all links */
+  color: white;
+  text-decoration:none; /* don't underline links */
+}
+a:hover {
+  color: darkseagreen;
+}
+
+#container {  /* this is the main box containing all but footer */
+  width: 800px;
+  margin: 0 auto; /* center on the page */
+  border-color: #4C3321; /* a dark brown */
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 3px; /* round the corners */
+  /* hack to make container extend past floats--set overflow (and width, set above) */
+  overflow: auto;
+}
+#header { /* whole header--text and pic */
+  background-color:darkgreen;
+  height: 220px; /* the pic height plus some padding */
+  position: relative; /* so positioning of rachelpic uses header as its parent block */
+  border-style:groove;
+  border-width:medium;
+  margin-bottom:10px;
+}
+#headerwords {
+/*  width: 60%;  don't need this if pic is absolutely positioned */
+  margin-top: 40px; /* place words down a bit from the top */
+  color: lightgrey;
+  margin-left: 20px;
+}
+#RJSname, #job {
+  padding-left:10px;
+  padding-bottom: 10px;
+}
+
+#rachelpic { /* width is 144 px, height 172 px */
+  position:absolute;
+  top: 20px;
+  right: 40px;
+  width:144px;
+  border-style:double;
+}
+
+#lhs {
+  width: 30%;
+  float: left; /* so RHS will come up next to it */
+}
+
+/* nav bar styling */
+#navdiv {
+  margin: 10px; /* get some space around it */
+/*  background-color:yellow; */
+}
+#navdiv ul {
+  list-style-type:none; /* get rid of bullets */
+  border-style:outset;
+  border-width: 4px;
+  background-color:darkslategray;
+  margin-top: 0px; /* move the whole navbar up and down here */
+  margin-bottom:30px; /* effectively move address down fr links */
+}
+#navdiv li {
+  border-style:dashed;
+  border-top-style: none;
+  border-left-style:none;
+  border-right-style: none;
+  border-width:1px;
+  border-color:lightgrey;
+  padding-top: 10px; /* space the list items so there is a little more space on the top than on the bottom */
+  padding-bottom:5px;
+}
+
+#navdiv a { 
+  padding-left: 5px;
+}
+
+
+/* address info styling */
+#addrdiv {
+  background-color:darkslategray;
+  color: white;
+  margin: 10px;
+  border-style:outset;
+  border-width: 4px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.info {
+  width: 65%;
+  background-color: #B2D1D1;
+  display:inline-block; /* move over next to lhs block */
+  margin: 10px;
+}
+.info p {
+  margin-bottom: 10px; /* space out paragraphs */
+}
+.textlist {
+  margin: 20px;
+  margin-left: 25px;
+  list-style-position: outside; /* align bullets */
+}
+
+#footer {
+  clear:both; /* get rid of needing to float around anything */
+  width: 800px;
+  text-align:center;
+  margin: 0 auto;
+  color: black; /* so I can see it for the time being */
+  font-size: small;
+}
