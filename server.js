@@ -11,7 +11,19 @@ app.get('/', function(req,res) {
   res.render('pages/index');
 });
 
+app.get('/family_life', function(req,res) {
+  res.render('pages/family_life');
+});
+
+app.get('/couples_therapy', function(req,res) {
+  res.render('pages/couples_therapy');
+});
+
+app.get('/therapy_with_teens', function(req,res) {
+  res.render('pages/therapy_with_teens');
+});
+
 //SERVER
 
 app.listen(3000);
-console.log('TITTIES!!!')
+console.log('TITTIES!!!');
