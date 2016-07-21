@@ -29,7 +29,7 @@ a:hover {
 }
 
 #container {  /* this is the main box containing all but footer */
-  width: 800px;
+  /*width: 800px;*/
   margin: 0 auto; /* center on the page */
   border-color: #4C3321; /* a dark brown */
   border-width: 5px;
@@ -127,7 +127,7 @@ a:hover {
 
 #footer {
   clear:both; /* get rid of needing to float around anything */
-  width: 800px;
+  /*width: 800px;*/
   text-align:center;
   margin: 0 auto;
   color: black; /* so I can see it for the time being */
