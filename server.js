@@ -23,6 +23,14 @@ app.get('/therapy_with_teens', function(req,res) {
   res.render('pages/therapy_with_teens');
 });
 
+app.get('/about_me', function(req,res) {
+  res.render('pages/about_me');
+});
+
+app.get('/sexuality', function(req,res) {
+  res.render('pages/sexuality');
+});
+
 //SERVER
 
 app.listen(3000);
