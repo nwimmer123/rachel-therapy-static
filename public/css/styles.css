@@ -133,3 +133,7 @@ a:hover {
   color: black; /* so I can see it for the time being */
   font-size: small;
 }
+
+.nav {
+  opacity: .8;
+}
